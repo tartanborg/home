@@ -18,91 +18,109 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="top-banner">This site is just for fun - WORK IN PROGRESS</div>
+
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="/">tartanborg</a>
         <nav class="site-nav" aria-label="Primary">
           <a href="#about">About</a>
-          <a href="#focus">Focus</a>
+          <a href="#blog">Blog</a>
           <a href="#connect">Connect</a>
         </nav>
       </header>
 
       <main>
-        <section class="hero" id="about">
-          <div class="hero-copy-block">
+        <section class="image-carousel" aria-label="Featured photography">
+          <div class="carousel-track" id="carousel-track">
+            <figure class="carousel-slide is-active" aria-hidden="false">
+              <img
+                src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1800&q=80"
+                alt="Sunlight filtering through a quiet forest"
+              />
+              <figcaption>
+                <span>Field Notes</span>
+                <strong>Light, texture, and the details worth keeping.</strong>
+              </figcaption>
+            </figure>
+            <figure class="carousel-slide" aria-hidden="true">
+              <img
+                src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1800&q=80"
+                alt="A camera resting on a clean desk"
+              />
+              <figcaption>
+                <span>Photography</span>
+                <strong>Frames shaped by timing, patience, and atmosphere.</strong>
+              </figcaption>
+            </figure>
+            <figure class="carousel-slide" aria-hidden="true">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1800&q=80"
+                alt="Code editor open on a laptop workspace"
+              />
+              <figcaption>
+                <span>Technology</span>
+                <strong>Systems thinking with a visual sense of rhythm.</strong>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-copy">
             <p class="eyebrow">Technology x Photography</p>
             <h1>Sharp digital thinking with a lens for detail.</h1>
-            <p class="hero-copy">
-              tartanborg is a modern personal brand exploring code, cameras, and
-              the crafted surfaces where systems design meets visual storytelling.
+            <p>
+              tartanborg is a modern personal site for code, cameras, field
+              notes, and the crafted surfaces where systems meet storytelling.
             </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#focus">See the focus</a>
-              <a class="button button-secondary" href="#connect">Start a conversation</a>
-            </div>
           </div>
 
-          <aside class="hero-panel" aria-label="Creative direction">
-            <div class="panel-orb"></div>
-            <p class="panel-label">Current Direction</p>
-            <ul class="panel-list">
-              <li>Minimal interface systems</li>
-              <li>Image-led storytelling</li>
-              <li>Liquid glass textures</li>
+          <div class="carousel-controls" aria-label="Carousel controls">
+            <button class="carousel-button" type="button" data-carousel-action="previous" aria-label="Previous slide">
+              &larr;
+            </button>
+            <div class="carousel-dots" aria-label="Choose slide">
+              <button class="is-active" type="button" data-carousel-dot="0" aria-label="Show slide 1"></button>
+              <button type="button" data-carousel-dot="1" aria-label="Show slide 2"></button>
+              <button type="button" data-carousel-dot="2" aria-label="Show slide 3"></button>
+            </div>
+            <button class="carousel-button" type="button" data-carousel-action="next" aria-label="Next slide">
+              &rarr;
+            </button>
+          </div>
+        </section>
+
+        <section class="info-bubbles" aria-label="About and recent posts">
+          <article class="bubble bubble-about" id="about">
+            <p class="section-label">About Me</p>
+            <h2>Curious about useful systems and beautiful evidence.</h2>
+            <p>
+              I work across technology, photography, and digital craft, looking
+              for the small choices that make an idea feel clear, tactile, and
+              considered.
+            </p>
+          </article>
+          <article class="bubble bubble-posts" id="blog">
+            <p class="section-label">Recent Blog Posts</p>
+            <ul class="post-list">
+              <li>
+                <a href="#">
+                  <span>Designing with warmer interfaces</span>
+                  <time datetime="2026-05-12">12 May 2026</time>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>What cameras teach software teams</span>
+                  <time datetime="2026-04-28">28 Apr 2026</time>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Notes from a weekend rebuild</span>
+                  <time datetime="2026-04-10">10 Apr 2026</time>
+                </a>
+              </li>
             </ul>
-            <div class="panel-metrics">
-              <div>
-                <span>Mode</span>
-                <strong>Editorial</strong>
-              </div>
-              <div>
-                <span>Tone</span>
-                <strong>Sleek</strong>
-              </div>
-            </div>
-          </aside>
-        </section>
-
-        <section class="spotlight" aria-label="Site mood">
-          <div class="spotlight-card spotlight-card-wide">
-            <p class="section-label">Aesthetic</p>
-            <h2>Clean like a product site, tactile like a camera body.</h2>
-          </div>
-          <div class="spotlight-card">
-            <p class="section-label">Palette</p>
-            <p>Graphite, silver-blue, and light refracted through frosted surfaces.</p>
-          </div>
-          <div class="spotlight-card">
-            <p class="section-label">Presence</p>
-            <p>Confident typography, calm spacing, and motion that feels intentional.</p>
-          </div>
-        </section>
-
-        <section class="features" id="focus">
-          <article class="card">
-            <p class="section-label">Tech</p>
-            <h2>Systems, interfaces, and digital tools.</h2>
-            <p>
-              Space to share experiments, product thinking, and the small details
-              that make software feel precise.
-            </p>
-          </article>
-          <article class="card">
-            <p class="section-label">Photography</p>
-            <h2>Frames shaped by light, texture, and timing.</h2>
-            <p>
-              A home for visual work with the same attention to composition,
-              rhythm, and atmosphere as the rest of the brand.
-            </p>
-          </article>
-          <article class="card">
-            <p class="section-label">Identity</p>
-            <h2>One voice across code and image.</h2>
-            <p>
-              The styling blends technical polish with editorial restraint so the
-              site feels personal without losing clarity.
-            </p>
           </article>
         </section>
 
