@@ -1,5 +1,3 @@
-const helloButton = document.querySelector("#hello-button");
-const statusMessage = document.querySelector("#status-message");
 const carouselSlides = Array.from(document.querySelectorAll(".carousel-slide"));
 const carouselDots = Array.from(document.querySelectorAll("[data-carousel-dot]"));
 const carouselButtons = Array.from(document.querySelectorAll("[data-carousel-action]"));
@@ -56,10 +54,3 @@ carouselDots.forEach((dot) => {
 });
 
 startCarousel();
-
-if (helloButton && statusMessage) {
-  helloButton.addEventListener("click", () => {
-    statusMessage.textContent =
-      "Studio link is live. Next step: swap this for your real contact or social action.";
-  });
-}
