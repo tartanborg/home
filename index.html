@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Share+Tech+Mono&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -32,6 +32,9 @@
 
       <main>
         <section class="image-carousel" aria-label="Featured photography">
+          <div class="card-toolbar" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
           <div class="carousel-track" id="carousel-track">
             <figure class="carousel-slide is-active" aria-hidden="false">
               <img
@@ -91,57 +94,71 @@
 
         <section class="info-bubbles" aria-label="About and recent posts">
           <article class="bubble bubble-about" id="about">
-            <p class="section-label">User Profile</p>
-            <h2>Logging In</h2>
-            <p>
-              I'm Rod, a tech-nerd, Software Engineer. Tartanborg is just a fun project where I will show my photographs and post some blogs.
-              <p>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Based in Scotland </p>
+            <div class="card-toolbar" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="bubble-body">
+              <p class="section-label">User Profile</p>
+              <h2>Logging In</h2>
+              <p>
+                I'm Rod, a tech-nerd, Software Engineer. Tartanborg is just a fun project where I will show my photographs and post some blogs.
+              </p>
+              <p>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Based in Scotland</p>
               <p>👨‍💻 Software Engineer</p>
               <p>📷 Amateur Photographer - Fujifilm X100VI</p>
               <p>🎮 Switch 2 | PS5 | Series X | PC</p>
-              </p>
-            </p>
+            </div>
           </article>
           <article class="bubble bubble-posts" id="blog">
-            <p class="section-label">Recent Log Entries</p>
-            <ul class="post-list">
-              <li>
-                <a href="log.html#entry-interface-warmth">
-                  <span>Designing with warmer interfaces</span>
-                  <time datetime="2026-05-12">12 May 2026</time>
-                </a>
-              </li>
-              <li>
-                <a href="log.html#entry-camera-teams">
-                  <span>What cameras teach software teams</span>
-                  <time datetime="2026-04-28">28 Apr 2026</time>
-                </a>
-              </li>
-              <li>
-                <a href="log.html#entry-weekend-rebuild">
-                  <span>Notes from a weekend rebuild</span>
-                  <time datetime="2026-04-10">10 Apr 2026</time>
-                </a>
-              </li>
-            </ul>
+            <div class="card-toolbar" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="bubble-body">
+              <p class="section-label">Recent Log Entries</p>
+              <ul class="post-list">
+                <li>
+                  <a href="log.html#entry-interface-warmth">
+                    <span>Designing with warmer interfaces</span>
+                    <time datetime="2026-05-12">12 May 2026</time>
+                  </a>
+                </li>
+                <li>
+                  <a href="log.html#entry-camera-teams">
+                    <span>What cameras teach software teams</span>
+                    <time datetime="2026-04-28">28 Apr 2026</time>
+                  </a>
+                </li>
+                <li>
+                  <a href="log.html#entry-weekend-rebuild">
+                    <span>Notes from a weekend rebuild</span>
+                    <time datetime="2026-04-10">10 Apr 2026</time>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </article>
         </section>
 
         <section class="contact" id="connect">
-          <p class="section-label">Establishing Connection...</p>
-          <div class="social-links" aria-label="Social links">
-            <a href="https://www.instagram.com/Tartanborg/" aria-label="Instagram @Tartanborg">
-              <span class="social-icon" aria-hidden="true">Instagram</span>
-              <span>@tartanborg</span>
-            </a>
-            <a href="https://www.threads.com/@Tartanborg" aria-label="Threads @Tartanborg">
-              <span class="social-icon" aria-hidden="true">Threads</span>
-              <span>@tartanborg</span>
-            </a>
-            <a href="https://x.com/Tartanborg" aria-label="X @Tartanborg">
-              <span class="social-icon" aria-hidden="true">X</span>
-              <span>@tartanborg</span>
-            </a>
+          <div class="card-toolbar" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="contact-body">
+            <p class="section-label">Establishing Connection...</p>
+            <div class="social-links" aria-label="Social links">
+              <a href="https://www.instagram.com/Tartanborg/" aria-label="Instagram @Tartanborg">
+                <span class="social-icon" aria-hidden="true">Instagram</span>
+                <span>@tartanborg</span>
+              </a>
+              <a href="https://www.threads.com/@Tartanborg" aria-label="Threads @Tartanborg">
+                <span class="social-icon" aria-hidden="true">Threads</span>
+                <span>@tartanborg</span>
+              </a>
+              <a href="https://x.com/Tartanborg" aria-label="X @Tartanborg">
+                <span class="social-icon" aria-hidden="true">X</span>
+                <span>@tartanborg</span>
+              </a>
+            </div>
           </div>
         </section>
       </main>
